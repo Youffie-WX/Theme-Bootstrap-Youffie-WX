@@ -1,0 +1,60 @@
+$primary-color: #E3728C;
+$warning-color:#292281;
+$elisa:#FB99B2;
+$dark-elisa:#292281;
+
+
+
+$theme-colors: (
+  "primary": $primary-color,
+  "warning": $warning-color,
+  "elisa": $elisa
+);
+
+
+
+
+@import "./scss/bootstrap";
+
+
+.card-hover-shadow:hover{
+  transform: translate(-6px, -6px);
+  box-shadow: 7px 7px 4px $elisa;
+}
+
+.size-logo{
+  height:3em;
+  width: 3em;
+}
+
+.bg-modify-color{
+  background-color: darken($warning-color, $amount: 5)
+}
+
+.test-opacity{
+  background-color: rgba($elisa,0.3);
+}
+
+.border-blue{
+  border-color: $warning-color;
+  border-width: 2px;
+}
+
+.border-pink{
+  border-color: $primary-color;
+  border-width: 2px;
+}
+
+.size-card{
+  height: 3em;
+  width: 3em;
+}
+
+.card-hover-shadow-dark:hover{
+  transform: translate(-6px, -6px);
+  box-shadow: 7px 7px 4px $dark-elisa;
+}
+
+.nav-link:hover{
+ background-color: lighten($primary-color, $amount: 2) ;
+}
